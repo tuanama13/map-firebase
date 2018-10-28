@@ -3,21 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peta Kampus Pontianak</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Map Firebase</title>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/index.css?version=3.4">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Libre+Franklin" rel="stylesheet">
-
-
-    <style>
-      h2{
-        font-family: 'Cabin', sans-serif;
-      }
-
-      p{
-        font-family: 'Libre Franklin', sans-serif;
-      }
-    </style>
-
+    <link href="https://fonts.googleapis.com/css?family=K2D|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.5.4/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -28,92 +19,56 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/map_google.js"></script>
     <script src="assets/js/string.js"></script>
     <script>
-
-      // var upb;
-      function initialize() {
-        var image = document.getElementById('image');
-        var propertiPeta = {
-          center: new google.maps.LatLng(-0.026487, 109.338362),
-          zoom: 12,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
-
-        // membuat Marker
-        var upb = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.0044568, 109.3020912),
-          map: peta
-        });
-        upb.addListener('click', function () {
-          document.getElementById("ket").innerHTML = text_upb;
-          image.src = "assets/img/2.png";        
-        });
-        var wd = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.0283751, 109.3342667),
-          map: peta
-        });
-        wd.addListener('click', function () {
-          document.getElementById("ket").innerHTML = "Kampus WD";
-          image.src = "assets/img/4.png";
-        });
-
-        var stmik = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.0260116, 109.3305435),
-          map: peta
-        });
-        stmik.addListener('click', function () {
-          document.getElementById("ket").innerHTML = text_stmik;
-          image.src = "assets/img/5.png";
-        });
-
-        var untan = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.0599076, 109.345622),
-          map: peta
-        });
-        untan.addListener('click', function () {
-          document.getElementById("ket").innerHTML = text_untan;
-          image.src = "assets/img/1.png";
-        });
-
-        var iain = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.0388796, 109.3405644),
-          map: peta
-        });
-        iain.addListener('click', function () {
-          document.getElementById("ket").innerHTML = text_iain;
-          image.src = "assets/img/6.png";
-        });
-
-        var polnep = new google.maps.Marker({
-          position: new google.maps.LatLng(-0.053851, 109.3468206),
-          map: peta
-        });
-        polnep.addListener('click', function () {
-          document.getElementById("ket").innerHTML = text_polnep  ;
-          image.src = "assets/img/3.png";
-        });
-      }
-      // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', initialize);
-        
-        // upb.addListener('click', function () {
-        //     document.getElementById("ket").innerHTML = "Paragraph changed!";
-        // });
         
     </script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12" id="googleMap" style="width:100%;height:330px;"></div>
-      </div>     
-      <div class="row">
-        <div class="col-6 col-m-12"><img id="image" width="100%" height="300px" src="assets/img/img3.png"></div>
-        <div class="col-6 col-m-12" id="ket"><h2>PETA KAMPUS</h2></div>
+   
+      <div class="bg"></div>
+      
+      <div class="title" align="center">
+        <h2 class="text-title">MAP FIREBASE</h2>
+        <hr class="hr-title">
+        <h3 class="text-subtitle">Ambrosius Ama Tuan</h3>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="card">
+          <a href="peta_kampus.html">
+            <img src="assets/img/menu1.jpeg" alt="Avatar" style="width:100%">
+            <!-- <div class="container"> -->
+            <h4><b>Peta Kampus</b></h4>
+          </a>
+          <!-- </div> -->
+        </div>
+        <div class="card">
+          <a href="peta_gorengan.html">
+          <img src="assets/img/menu2.jpg" alt="Avatar" style="width:100%">
+          <!-- <div class="container"> -->
+          <h4><b>Peta Gorengan</b></h4>
+          </a>
+          <!-- </div> -->
+        </div>
+        <div class="card">
+          <a href="">
+          <img src="assets/img/menu3.jpg" alt="Avatar" style="width:100%">
+          <!-- <div class="container"> -->
+          <h4><b>Peta Warung Kopi</b></h4>
+          </a>
+          <!-- </div> -->
+        </div>
+        <div class="card" >
+          <a href="https://www.instagram.com/ambrosius_ama/">
+          <img src="assets/img/menu4.jpg" alt="Avatar" style="width:100%">
+          <!-- <div class="container"> -->
+          <h4><b>About Me</b></h4>
+          </a>
+          <!-- </div> -->
+        </div>
+      </div>
+ 
   </body>
 </html>

@@ -1,6 +1,7 @@
-* {
+ * {
     box-sizing: border-box;
-}
+} 
+
 
 .row::after {
     content: "";
@@ -11,12 +12,11 @@
 [class*="col-"] {
     float: left;
     padding: 10px;
-    /* border: solid; */
-    /* border-color: red; */
+
 }
+
 .container{
     display: grid;
-    grid-gap: 5px;
 }
 
 .col-1 {
@@ -66,15 +66,16 @@
 .col-12 {
     width: 100%;
 }
-img {
-    max-width: 100%;
-}
 
 @media only screen and (max-width: 768px) {
    [class*="col-"] {
        float: left;
        padding: 5px;
 
+   }
+   img {
+       max-width: 100%;
+       
    }
     .col-m-7 {
        width: 58.33%;
