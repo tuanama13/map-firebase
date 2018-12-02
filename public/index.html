@@ -37,10 +37,10 @@
 
       <div class="row">
         <div class="card">
-          <a href="peta_kampus.html">
+          <a href="task1.html">
             <img src="assets/img/menu1.jpeg" alt="Avatar" style="width:100%">
             <!-- <div class="container"> -->
-            <h4><b>Peta Kampus</b></h4>
+            <h4><b>Tugas 1</b></h4>
           </a>
           <!-- </div> -->
         </div>
@@ -69,6 +69,16 @@
           <!-- </div> -->
         </div>
       </div>
+
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('SW terdaftar', reg))
+          .catch(err => console.log('SW Gagal: ', err));
+          });
+        }
+      </script>
  
   </body>
 </html>
