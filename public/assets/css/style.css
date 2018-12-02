@@ -2,6 +2,56 @@
     box-sizing: border-box;
 } 
 
+input{
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 14pt;
+    width: 200px;
+    border: 2px solid gray;
+    /* border-radius: 8px; */
+    /* border-color: dimgrey; */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.input-text{
+    width: 100%;
+}
+
+button{
+    /* padding: 5px; */
+    height: 50px;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-lg{
+    /* height: 50px; */
+    width: 40%;
+}
+
+.btn{
+    /* height: 40px; */
+    width: 20%;
+}
+.grad1 {
+	background: linear-gradient(to right,#f54ea2 , #ea6060); /* Standard syntax */
+	background: -webkit-linear-gradient(left, #f54ea2 , #ea6060); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #f54ea2 , #ea6060); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #f54ea2 , #ea6060); /* For Firefox 3.6 to 15 */
+}
+
 
 .row::after {
     content: "";
@@ -67,12 +117,25 @@
     width: 100%;
 }
 
+
+
 @media only screen and (max-width: 768px) {
    [class*="col-"] {
        float: left;
        padding: 5px;
 
    }
+   .btn-lg{
+        /* height: 50px; */
+        width: 95%;
+    }
+    .btn{
+        width: 45%;
+    }
+
+    .input-text{
+        width: 95%;
+    }
    img {
        max-width: 100%;
        
