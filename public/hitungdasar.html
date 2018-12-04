@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map Firebase</title>
+    <link rel="stylesheet" href="assets/css/style.css?version = 3.2">
+    <!-- <link rel="stylesheet" href="assets/css/index.css?version=3.4"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <style>
+        .title{
+            margin-top: 30px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Libre+Franklin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=K2D|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.5.4/firebase-app.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <!-- <script src="assets/js/string.js"></script> -->
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 col-m-12">
+            <div class="row">
+                <h1 class="title" style="text-align:center;">Kalkulator</h1>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12" style="margin-right: 5px; text-align:center">
+                            <input class="input-text" type="number" name="angka1"  id="angka1" placeholder="Masukan Angka 1">
+                        </div>
+                        <div class="col-12" style="margin-right: 5px; text-align:center">
+                            <input class="input-text" type="number" name="angka2" id="angka2"  placeholder="Masukan Angka 2">
+                        </div>
+                    </div>
+                    <div class="row" style="text-align:center">
+                        <button class="btn grad1" onclick="hitung('+')">+</button>
+                        <button class="btn grad1" onclick="hitung('-')">-</button>
+                        <button class="btn grad1" onclick="hitung('*')">x</button>
+                        <button class="btn grad1" onclick="hitung('/')">/</button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12" style="text-align:center">
+                            <input class="input-text" type="number" name="hasil" id="hasil"  placeholder="Hasil">
+                        </div>
+                    </div>
+
+
+                    <!-- <button class="btn-lg" id="btnHitung" onclick="tambah()">Hitung</button> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/fungsi.js"></script>
+</body>
+
+</html>

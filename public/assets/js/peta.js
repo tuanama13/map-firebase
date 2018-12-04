@@ -10,16 +10,17 @@ function findLocation(x, y) {
 
 function showLocation(e) {
     //console.log("you clicked " + e.latlng.lat + " dan "+e.latlng.lng);
-let ix = findLocation(e.latlng.lat, e.latlng.lng);
-if (ix >= 0) {
-    img.src = places[ix].gambar;
-    par.textContent = places[ix].review;
-}
+    let ix = findLocation(e.latlng.lat, e.latlng.lng);
+    if (ix >= 0) {
+        img.src = places[ix].gambar;
+        par.textContent = places[ix].review;
+    }
 }
 let gmb = document.getElementById("gmb");
 let rev = document.getElementById("review");
 let img = document.createElement('img');
 let par = document.createElement('p');
+// img.sr
 gmb.appendChild(img);
 rev.appendChild(par);
 

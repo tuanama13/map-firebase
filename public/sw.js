@@ -2,11 +2,14 @@ const NAMACACHE = 'mws-v2';
 const filesToCache = [
     '.',
     'index.html',
-    // 'fetxh1.html',
+    'fetch1.html',
     'peta_gorengan.html',
     'peta_kampus.html',
+    'peta_fecth.html',
+    'hitungdasar.html',
     'sort.html',
     'task1.html',
+    'readnote.html',
     'assets/img/1.png',
     'assets/img/2.png',
     'assets/img/3.png',
@@ -21,14 +24,15 @@ const filesToCache = [
     'assets/css/index.css',
     'assets/css/modal.css',
     'assets/css/style.css',
-    'p1/add2numbers.html',
+    'assets/css/task.css',
+    // 'p1/add2numbers.html',
     'assets/js/fungsi.js',
     'assets/js/map_google.js',
-    // 'assets/js/peta.js',
+    'assets/js/peta.js',
     'assets/js/readnote.js',
     'assets/js/string_gorengan.js',
     'assets/js/string.js',
-    'p1/js/add2numbers.js'
+    // 'p1/js/add2numbers.js'
 ];
 self.addEventListener('install', event => {
     // console.log('Persiapan Cache');

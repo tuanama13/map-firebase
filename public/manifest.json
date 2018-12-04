@@ -1,25 +1,35 @@
 {
-    "name": "INIXINDO App",
-    "short_name": "INIX",
+    "name": "Maps-Ama",
+    "short_name": "Maps",
     "icons": [
         {
-            "src": "assets/img/MyIcon100pixel.png",
+            "src": "assets/img/icon100.png",
             "sizes": "100x100",
             "type": "image/png"
         },
         {
-            "src": "assets/img/MyIcon200pixel.png",
+            "src": "assets/img/icon200.png",
             "sizes": "200x200",
             "type": "image/png"
         },
         {
-            "src": "assets/img/MyIcon300pixel.png",
+            "src": "assets/img/icon300.png",
             "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/icon400.png",
+            "sizes": "400x400",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/icon.png",
+            "sizes": "500x500",
             "type": "image/png"
         }
     ],
     "start_url": "/?utm_source=homescreen",
     "display": "standalone",
-    "background_color": "#3E4EB8",
-    "theme_color": "#2F3BA2"
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
 }

@@ -1,0 +1,108 @@
+#headermws{
+    margin: -8px;
+    background-image: url("/assets/img/head-task.jpg");
+    background-size: cover;
+    -webkit-filter: grayscale(150%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(150%);
+    
+}
+.header{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 30px;
+    
+    /* background-image: url("/assets/img/head-task.jpg"); */
+    /* position: absolute; */
+    /* background-size: cover; */
+}
+
+.header > h1{
+    /* padding-top: -20px; */
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+}
+.header>h3 {
+    /* padding-top: -20px; */
+    font-family: 'Barlow', sans-serif;
+    font-size: 2em;
+}
+
+#menu{
+    color: white;
+    text-shadow: 2px 2px black;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border: black solid; */
+    /* -webkit-filter: grayscale(100%); */
+    /* Safari 6.0 - 9.0 */
+    /* filter: grayscale(100%); */
+    margin: 5px;
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hitung{
+    /* background-image: url("/assets/img/hitung2.jpg");
+    background-size: cover; */
+    background-image: linear-gradient(to bottom right, #a9f1df, #ffbbbb);
+    
+}
+
+.map1 {
+     background-image: linear-gradient(to bottom right, #ea8d8d, #a890fe);
+}
+
+.map2{
+     background-image: linear-gradient(to bottom right, #00b7ff, #ffffc7);
+}
+
+.sideleft{
+    margin-top: 9px;
+    padding-left: 30px;
+    /* border: black solid; */
+}
+
+.profile{
+    height: auto;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    /* text-align: center; */
+}
+
+.sideleft > p{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: -5px;
+}
+.sideleft>h2 {
+    font-family: 'Text Me One', sans-serif;
+    margin-top: -13px;
+}
+.sideleft > h3{
+    margin-top: -7px;
+}
+.sideleft > a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.footer{
+    /* border: black solid; */
+}
+
+@media only screen and (max-width: 768px){
+    #headermws{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+    .profile{
+        padding-top: 30px;
+        margin-left: 70px;
+    }
+}

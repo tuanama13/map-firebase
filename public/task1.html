@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Map Firebase</title>
     <link rel="stylesheet" href="assets/css/style.css?version = 3.2">
+    <link rel="stylesheet" href="assets/css/task.css?version = 3.6">
     <!-- <link rel="stylesheet" href="assets/css/index.css?version=3.4"> -->
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Libre+Franklin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=K2D|Roboto|Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/5.5.4/firebase-app.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
@@ -21,48 +28,52 @@
     </script>
   </head>
   <body>
-    <div class="row"><h3>header</h3></div>
+    <div class="row" id="headermws">
+        <div class="header">
+            <h1 style="margin-top: 25px;">MWS 2018</h1>
+            <h3 style="margin-top: -35px;">Mobile Web Spesialist 2018</h3>
+            <!-- <h3>Pontianak</h3> -->
+        </div>
+    </div>
+    </div>
     <div class="row">
-        <div class="col-6 col-m-12">sideleft</div>
-        <div class="col-6 col-m-12">
+        <div class="col-3 col-m-12 sideleft">
+            <img class="profile" src="assets/img/menu4.jpg" alt="me">
+            <p>Nama</p>
+            <h2>Ambrosius Ama Tuan</h2>
+            <br>
+            <p>Social Media</p>
+            <a href="https://www.instagram.com/ambrosius_ama/"><span><i class="fab fa-instagram"></i></span></a>
+            <a href="https://www.facebook.com/ambrosiusama"><span><i class="fab fa-facebook-f"></i></span></a>
+            <a href="https://twitter.com/ambrosiusama7"><span><i class="fab fa-twitter"></i></span></a>
+        </div>
+        <div class="col-9 col-m-12">
             <div class="row" >
-                <h1 style="text-align:center;">Hitung Dasar</h1>
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12" style="margin-right: 5px; text-align:center">
-                            <input class="input-text" type="text" name="angka1" id="angka1" placeholder="Masukan Angka 1">
-                        </div>
-                        <div class="col-12" style="margin-right: 5px; text-align:center">
-                            <input class="input-text" type="text" name="angka2" id="angka2" placeholder="Masukan Angka 2">
-                        </div>                           
+                <a href="hitungdasar.html">
+                    <div class="col-12 hitung" id="menu">
+                        <h1 style="text-align:center;">Hitung Dasar</h1>
                     </div>
-                    <div class="row" style="text-align:center">
-                        <button class="btn grad1"  onclick="hitung('+')">+</button>
-                        <button class="btn grad1"   onclick="hitung('-')">-</button>
-                        <button class="btn grad1"  onclick="hitung('*')">x</button>
-                        <button class="btn grad1"  onclick="hitung('/')">/</button>
+                </a>
+                <a href="peta_fetch.html">
+                    <div class="col-12 map1" id="menu">
+                        <h1 style="text-align:center;">Peta Fetch JSON</h1>
                     </div>
-
-                    <div class="row" >
-                        <div class="col-12" style="text-align:center">
-                            <input class="input-text" type="text" name="hasil" id="hasil" placeholder="Hasil">
-                        </div>
+                </a>
+                </a>    
+                <a href="peta_gorengan.html">
+                    <div class="col-12 map2" id="menu">
+                        <h1 style="text-align:center;">Peta Leaflet Lain</h1>
                     </div>
-                    
-                    
-                    <!-- <button class="btn-lg" id="btnHitung" onclick="tambah()">Hitung</button> -->
-                    
-                </div>
-                <div class="col-12">
-                    <h1>Map</h1>
-                </div>
-                <div class="col-12">
-                    <h1>About</h1>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="row"><h3>footer</h3></div>
+    <div class="row">
+        <div class="col-12 footer">
+            <h3 style="text-align: right">@MWS-2018</h3>
+        </div>
+        
+    </div>
     <script src="assets/js/fungsi.js"></script>
   </body>
 </html>
